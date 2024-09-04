@@ -145,7 +145,7 @@ ggplot(iPro_NOC0, aes(x=forcats::fct_infreq(Cluster), fill=Celltype))+
   geom_histogram(stat ='count')+
   scale_fill_manual(values=c('orange', 'red3', 'green3')) + 
   xlab('Clone ID')+
-  ylab('Nº cells per clone')+
+  ylab('NÂº cells per clone')+
   ggtitle('Cells per clone and cell type',subtitle = 'FlpoERT2 x iProgenitor x iFlpMosaic')+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.3, hjust=1), panel.grid = element_blank())
   
@@ -154,7 +154,7 @@ ggplot(iPro_less30all, aes(x=forcats::fct_infreq(Clone), fill=Celltype))+
   geom_histogram(stat ='count')+
   scale_fill_manual(values=c('orange', 'red3', 'green3')) + 
   xlab('Clone ID')+
-  ylab('Nº cells per clone')+
+  ylab('NÂº cells per clone')+
   ggtitle('Cells per clone and cell type',subtitle = 'FlpoERT2 x iProgenitor x iFlpMosaic')+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.3, hjust=1, size=5),panel.grid = element_blank())+
   facet_wrap(~Image)
